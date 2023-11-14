@@ -361,7 +361,7 @@ esac
 
 ## Order packages alphabetically, separate each package with ", "
 PACKAGES=$( echo ${PACKAGES} | sed "s/[, ]\+/\n/g" | LC_ALL=C sort -u \
-  | awk 'ORS=", "' | sed "s/[, ]*$//" )
+  | awk '{ printf "%s ", $0 }' | sed "s/[[:space:]]*$//" | sed "s/[, ]*$//" )
 
 ## Filename structure for final file
 OUTPUT=$( echo "kali-linux-${VERSION}-${VARIANT}-rootfs-${ARCH}" | tr '[:upper:]' '[:lower:]' )
