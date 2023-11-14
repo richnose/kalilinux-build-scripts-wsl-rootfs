@@ -108,7 +108,7 @@ ask_confirmation() {
 
   ## Process the answer
   [ "${answer}" ] && answer=${answer} || answer=${default}
-  case "${answer}" in
+  case "${answer,,}" in
     y|yes) return 0;;
     *)     return 1;;
   esac
