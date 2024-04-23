@@ -121,7 +121,7 @@ If you wish to build this, you can install `kali-linux-default`:
 
 
 ```console
-$ sudo ./build.sh -S default
+$ sudo ./build.sh -T default
 ```
 
 _NOTE: You can drop `kali-linux-` from the metapackage name._
