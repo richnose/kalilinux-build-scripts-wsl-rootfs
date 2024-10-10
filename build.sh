@@ -5,7 +5,7 @@
 #
 # REF:
 # - https://gitlab.com/kalilinux/build-scripts/kali-docker/-/blob/master/build-rootfs.sh
-# - https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/-/blob/master/nethunter-fs/stages/stage1
+# - https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-rootfs/-/blob/main/stages/stage1.sh (REF: c0f10f036c07ed69a74c23a70ff2d24c05320ed2)
 #
 
 set -eu
