@@ -4,7 +4,7 @@
 # http_proxy= ./$0
 #
 # REF:
-# - https://gitlab.com/kalilinux/build-scripts/kali-docker/-/blob/master/build-rootfs.sh
+# - https://gitlab.com/kalilinux/build-scripts/kali-docker/-/blob/master/build-rootfs.sh (REF: b65b5a63ffc0f520f2736b531250aaa954568ed2)
 # - https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-rootfs/-/blob/main/stages/stage1.sh (REF: c0f10f036c07ed69a74c23a70ff2d24c05320ed2)
 #
 
