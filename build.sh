@@ -108,7 +108,7 @@ ask_confirmation() {
 
   ## Process the answer
   [ "${answer}" ] && answer=${answer} || answer=${default}
-  case "${answer}" in
+  case "${answer,,}" in
     y|yes) return 0;;
     *)     return 1;;
   esac
@@ -361,7 +361,7 @@ esac
 
 ## Order packages alphabetically, separate each package with ", "
 PACKAGES=$( echo ${PACKAGES} | sed "s/[, ]\+/\n/g" | LC_ALL=C sort -u \
-  | awk 'ORS=", "' | sed "s/[, ]*$//" )
+  | awk '{ printf "%s ", $0 }' | sed "s/[[:space:]]*$//" | sed "s/[, ]*$//" )
 
 ## Filename structure for final file
 OUTPUT=$( echo "kali-linux-${VERSION}-${VARIANT}-rootfs-${ARCH}" | tr '[:upper:]' '[:lower:]' )
